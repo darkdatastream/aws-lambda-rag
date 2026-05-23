@@ -1,0 +1,52 @@
+[project]
+name = "aws-lambda-rag"
+version = "0.1.0"
+description = "Hybrid RAG assistant for AWS Lambda documentation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "darkdatastream" }
+]
+dependencies = [
+    "chromadb>=0.5.0",
+    "sentence-transformers>=3.0.0",
+    "openai>=1.50.0",
+    "streamlit>=1.38.0",
+    "pydantic>=2.8.0",
+    "pydantic-settings>=2.4.0",
+    "loguru>=0.7.0",
+    "python-dotenv>=1.0.0",
+    "click>=8.1.0",
+    "pyyaml>=6.0.0",
+    "tqdm>=4.66.0",
+    "httpx>=0.27.0",
+    "markdown-it-py>=3.0.0",
+    "rank-bm25>=0.2.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "ruff>=0.6.0",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*", "config*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+pythonpath = ["."]

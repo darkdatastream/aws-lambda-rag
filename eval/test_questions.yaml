@@ -1,0 +1,80 @@
+# Test questions for evaluating the AWS Lambda RAG pipeline.
+# Run with: python scripts/03_test_retrieval.py
+
+questions:
+  - id: lambda_01
+    question: "What is the maximum Lambda function timeout?"
+    expected: "900 seconds / 15 minutes"
+    difficulty: easy
+    topic: timeout
+
+  - id: lambda_02
+    question: "What is the maximum memory for a Lambda function?"
+    expected: "10,240 MB"
+    difficulty: easy
+    topic: quotas
+
+  - id: lambda_03
+    question: "What Python runtimes does Lambda support?"
+    difficulty: medium
+    topic: runtimes
+
+  - id: lambda_04
+    question: "How do I configure environment variables for a Lambda function?"
+    difficulty: medium
+    topic: environment-variables
+
+  - id: lambda_05
+    question: "What are the best practices for working with database connections in Lambda?"
+    difficulty: medium
+    topic: best-practices
+
+  - id: lambda_06
+    question: "How does Lambda function scaling work?"
+    difficulty: medium
+    topic: scaling
+
+  - id: lambda_07
+    question: "What is reserved concurrency in Lambda?"
+    difficulty: medium
+    topic: concurrency
+
+  - id: lambda_08
+    question: "What is provisioned concurrency in Lambda?"
+    difficulty: medium
+    topic: concurrency
+
+  - id: lambda_09
+    question: "How should I choose Lambda memory settings?"
+    difficulty: medium
+    topic: memory
+
+  - id: lambda_10
+    question: "What should I consider when setting a Lambda timeout?"
+    difficulty: easy
+    topic: timeout
+
+  - id: lambda_11
+    question: "What is a Lambda runtime?"
+    difficulty: easy
+    topic: runtimes
+
+  - id: lambda_12
+    question: "What are the key parts of configuring a Lambda function?"
+    difficulty: easy
+    topic: functions
+
+  - id: lambda_13
+    question: "What best practices does AWS recommend for Lambda deployment packages?"
+    difficulty: hard
+    topic: best-practices
+
+  - id: lambda_14
+    question: "What Lambda quotas apply to deployment package size?"
+    difficulty: hard
+    topic: quotas
+
+  - id: lambda_15
+    question: "When should I avoid using recursive Lambda invocations?"
+    difficulty: hard
+    topic: best-practices

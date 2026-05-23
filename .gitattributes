@@ -1,0 +1,3 @@
+*.ipynb linguist-documentation
+*.ipynb linguist-detectable=false
+docs/* linguist-documentation
